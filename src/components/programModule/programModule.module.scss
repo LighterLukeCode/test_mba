@@ -1,0 +1,33 @@
+.h6 {
+  flex-basis: 30%;
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 400;
+
+  .span {
+    padding-top: 29px;
+    border-top: 2px solid #ff3535;
+  }
+}
+
+.ul {
+  flex-basis: 70%;
+  line-height: 120%;
+  li::before {
+    content: "\2022";
+    color: #ff3535;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+.div {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  margin-bottom: 71px;
+}

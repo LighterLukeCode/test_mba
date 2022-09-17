@@ -1,0 +1,55 @@
+.footer {
+  display: flex;
+  gap: 30px;
+  margin-top: 140px;
+}
+.practice {
+  background: #ff3535;
+  flex-basis: 50%;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 0px;
+    height: 0px;
+    border-top: 43px solid #ffffff;
+    border-left: 43px solid #cd1800;
+  }
+}
+.h6 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  color: #ffffff;
+  padding: 56px 110px 20px 71px;
+}
+.p {
+  padding-left: 71px;
+  padding-right: 94px;
+  padding-bottom: 92px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;
+  color: #ffffff;
+}
+.exam {
+  flex-basis: 50%;
+  background: #2d2c2a;
+}
+.ul {
+  padding-left: 71px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;
+  color: #ffffff;
+  li::before {
+    content: "\2022";
+    color: #ff3535;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+  }
+}

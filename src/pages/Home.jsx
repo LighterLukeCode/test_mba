@@ -1,4 +1,5 @@
-import Program from "../components/Program";
+import Footer from "../components/footer/Footer";
+import Program from "../components/program/Program";
 
 const Home = () => {
   const getData = () => {
@@ -9,7 +10,10 @@ const Home = () => {
   getData();
   return (
     <>
+      <h1>Специализированные дисциплины</h1>
       <Program />
+      <Program />
+      <Footer />
     </>
   );
 };

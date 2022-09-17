@@ -1,6 +1,19 @@
 @import "./libs/normalize.scss";
+@import "./fonts.scss";
 
-.title {
-  font-size: 56px;
-  font-family: "StyreneAWeb Bold";
+body {
+  font-family: "StyreneAWeb";
+  font-weight: 300;
+  font-size: 16px;
+}
+.container {
+  max-width: 1286px;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  margin: 71px 0px 89px 0px;
+  text-align: center;
 }

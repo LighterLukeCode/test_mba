@@ -1,18 +1,22 @@
 @font-face {
-  font-family: "StyreneAWeb Light";
+  font-family: "StyreneAWeb";
   src: url("./fonts/StyreneAWeb-Light.ttf") format("truetype"), url("./fonts/StyreneAWeb-Light.woff") format("woff"),
     url("./fonts/StyreneAWeb-Light.woff2") format("woff2");
   font-style: normal;
-
-  font-family: "StyreneAWeb Regular";
+  font-weight: 300;
+}
+@font-face {
+  font-family: "StyreneAWeb";
   src: url("./fonts/StyreneAWeb-Regular.ttf") format("truetype"), url("./fonts/StyreneAWeb-Regular.woff") format("woff"),
     url("./fonts/StyreneAWeb-Regular.woff2") format("woff2");
   font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "StyreneAWeb Bold";
+  font-family: "StyreneAWeb";
   src: url("./fonts/StyreneAWeb-Bold.ttf") format("truetype"), url("./fonts/StyreneAWeb-Bold.woff") format("woff"),
     url("./fonts/StyreneAWeb-Bold.woff2") format("woff2");
   font-style: normal;
+  font-weight: 700;
 }
