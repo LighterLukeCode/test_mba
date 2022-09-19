@@ -31,3 +31,40 @@
   gap: 90px;
   margin-bottom: 71px;
 }
+
+///////MobileView////////////////
+
+@media (max-width: 375px) {
+  .div {
+    display: block;
+    margin-bottom: 35px;
+  }
+  .ul {
+    font-size: 15px;
+    line-height: 130%;
+    li {
+      margin-bottom: 10px;
+    }
+    li::before {
+      margin-left: 0em;
+    }
+  }
+}
+
+.moduleBtn {
+  background: #f7f7f7;
+  border: none;
+  display: flex;
+  padding: 15px 24px 18px 24px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 17px;
+  .plusIcon {
+    margin-right: 27px;
+  }
+  .numberModule {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 130%;
+  }
+}

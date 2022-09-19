@@ -10,7 +10,7 @@ const Home = () => {
   getData();
   return (
     <>
-      <h1>Специализированные дисциплины</h1>
+      <h1 className="title">Специализированные дисциплины</h1>
       <Program />
       <Program />
       <Footer />

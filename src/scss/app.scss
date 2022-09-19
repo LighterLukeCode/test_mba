@@ -10,10 +10,24 @@ body {
   max-width: 1286px;
   margin: 0 auto;
 }
-h1 {
+.title {
   font-weight: 700;
   font-size: 36px;
   line-height: 120%;
   margin: 71px 0px 89px 0px;
   text-align: center;
 }
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 347px;
+    margin: 0 auto;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    text-align: left;
+    margin: 28px 0px 34px 0px;
+  }
+} ;
