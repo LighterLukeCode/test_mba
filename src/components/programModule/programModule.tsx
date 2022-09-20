@@ -1,37 +1,20 @@
 import styles from "./programModule.module.scss";
-import { BrowserView, MobileView } from "react-device-detect";
-import plusIcon from "../../images/plusIcon.png";
-import minusIcon from "../../images/minusIcon.png";
-import { useState } from "react";
+import { BrowserView, MobileView, isBrowser } from "react-device-detect";
+
+import Hider from "../hider/Hider";
 
 const ProgramModule = () => {
-  const [openModule, setOpenModule] = useState(false);
   return (
-    <div className={styles.div}>
+    <div className={styles.module__content}>
       <BrowserView>
         <h6 className={styles.h6}>
           <span className={styles.span}>1 модуль</span>
         </h6>
       </BrowserView>
       <MobileView>
-        {openModule ? (
-          <button className={styles.moduleBtn}>
-            <img className={styles.minusIcon} src={minusIcon} alt="minusIcon" />
-            <span className={styles.numberModule}>1 модуль</span>
-          </button>
-        ) : (
-          <button className={styles.moduleBtn}>
-            <img className={styles.plusIcon} src={plusIcon} alt="plusIcon" />
-            <span className={styles.numberModule}>1 модуль</span>
-          </button>
-        )}
-        {
-          <button className={styles.moduleBtn}>
-            <img className={styles.plusIcon} src={openModule ? minusIcon : plusIcon} alt="plusIcon" />
-            <span className={styles.numberModule}>1 модуль</span>
-          </button>
-        }
+        <Hider />
       </MobileView>
+
       <ul className={styles.ul}>
         <li>Маркетинговые стратегии антикризисного менеджмента</li>
         <li>Антикризисное управление предприятиями: реструктуризация, банкротство, слияние и поглощение</li>
