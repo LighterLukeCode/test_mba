@@ -1,31 +1,3 @@
-.ul {
-  flex-basis: 70%;
-  line-height: 120%;
-  li::before {
-    content: "\2022";
-    color: #ff3535;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
-}
-@media (max-width: 375px) {
-  .ul {
-    font-size: 15px;
-    line-height: 130%;
-    li {
-      margin-bottom: 10px;
-    }
-    li::before {
-      margin-left: 0em;
-    }
-  }
-}
-
 .moduleBtn {
   background: #f7f7f7;
   border: none;
@@ -53,7 +25,7 @@
   }
 }
 
-.list {
+.list__content {
   overflow: hidden;
   transition: max-height 1s ease-in-out;
 }

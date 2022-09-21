@@ -1,5 +1,5 @@
-import Footer from "../components/footer/Footer";
-import Program from "../components/program/Program";
+import Footer from "../components/footer";
+import Program from "../components/program";
 
 const Home = () => {
   const getData = () => {

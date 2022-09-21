@@ -1,22 +1,23 @@
-.h3 {
+.program__title {
   font-weight: 700;
   font-size: 26px;
   line-height: 120%;
   margin-bottom: 83px;
 }
-.div {
+.program__content {
   display: flex;
   gap: 30px;
 }
 
 @media (max-width: 375px) {
-  .h3 {
+  .program__title {
     font-weight: 700;
     font-size: 22px;
     line-height: 120%;
     margin-bottom: 27px;
+    margin-top: 35px;
   }
-  .div {
+  .program__content {
     display: block;
   }
 }

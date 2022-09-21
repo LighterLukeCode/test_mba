@@ -4,18 +4,18 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.practice}>
-        <h6 className={styles.h6}>Практические модули</h6>
-        <p className={styles.p}>
+        <h3 className={styles.title}>Практические модули</h3>
+        <p className={styles.practice__text}>
           Работа над собственными проектами: практика групповых взаимодействий, кейс-методы, эссе
         </p>
       </div>
       <div className={styles.exam}>
-        <h6 className={styles.h6}>Итоговая аттестация</h6>
-        <ul className={styles.ul}>
-          <li>
+        <h3 className={styles.title}>Итоговая аттестация</h3>
+        <ul className={styles.exam__list}>
+          <li className={styles.exam__list_item}>
             Бизнес-проектирование (подготовка итоговой аттестационной работы, консультирование по бизнес-проектированию)
           </li>
-          <li>Защита итоговой аттестационной работы</li>
+          <li className={styles.exam__list_item}>Защита итоговой аттестационной работы</li>
         </ul>
       </div>
     </footer>

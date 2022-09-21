@@ -20,14 +20,14 @@
     border-left: 43px solid #cd1800;
   }
 }
-.h6 {
+.title {
   font-weight: 700;
   font-size: 36px;
   line-height: 120%;
   color: #ffffff;
-  padding: 56px 110px 20px 71px;
+  padding: 56px 110px 24px 71px;
 }
-.p {
+.practice__text {
   padding-left: 71px;
   padding-right: 94px;
   padding-bottom: 92px;
@@ -40,17 +40,52 @@
   flex-basis: 50%;
   background: #2d2c2a;
 }
-.ul {
+.exam__list {
   padding-left: 71px;
   font-weight: 300;
   font-size: 20px;
   line-height: 130%;
   color: #ffffff;
-  li::before {
+  .exam__list_item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .exam__list_item::before {
     content: "\2022";
     color: #ff3535;
     font-weight: bold;
     display: inline-block;
     width: 1em;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    margin-top: 44px;
+    flex-direction: column;
+    gap: 23px;
+    margin-bottom: 47px;
+  }
+  .title {
+    font-size: 25px;
+    padding: 31px 17px 25px 17px;
+    text-align: center;
+  }
+  .practice__text {
+    padding-left: 22px;
+    padding-right: 23px;
+    padding-bottom: 41px;
+  }
+  .practice::before {
+    border-top: 26px solid #ffffff;
+    border-left: 26px solid #cd1800;
+  }
+  .exam__list {
+    padding-left: 23px;
+    .exam__list_item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    .exam__list_item:last-child {
+      padding-bottom: 59px;
+    }
   }
 }
