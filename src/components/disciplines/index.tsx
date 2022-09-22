@@ -1,6 +1,9 @@
+import { useAppSelector } from "../../redux/hooks";
 import styles from "./disciplines.module.scss";
 
 const Disciplines = () => {
+  const { items } = useAppSelector(state => state.programsSlice);
+
   return (
     <ul className={styles.disciplines__list}>
       <li className={styles.discipline}>Маркетинговые стратегии антикризисного менеджмента</li>
