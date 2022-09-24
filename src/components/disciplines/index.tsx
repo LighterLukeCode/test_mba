@@ -1,10 +1,15 @@
+import { SpespecializedSubjects } from "../../interfaces/Program";
 import styles from "./disciplines.module.scss";
 
-const Disciplines = ({ disciplines }) => {
+interface Props {
+  disciplines: SpespecializedSubjects[];
+}
+
+const Disciplines = ({ disciplines }: Props) => {
   return (
     <ul className={styles.disciplines__list}>
       {disciplines.map(discipline => (
-        <li key={discipline._id} className={styles.discipline}>
+        <li key={discipline.id} className={styles.discipline}>
           {discipline.string}
         </li>
       ))}

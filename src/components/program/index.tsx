@@ -1,8 +1,12 @@
 import ProgramModule from "../programModule";
 import styles from "./program.module.scss";
-import { useAppSelector } from "../../redux/hooks";
+import { Program as ProgramType } from "../../interfaces/Program";
 
-const Program = ({ program }) => {
+interface Props {
+  program: ProgramType;
+}
+
+const Program = ({ program }: Props) => {
   return (
     <>
       <h3 className={styles.program__title}>{program.title}</h3>

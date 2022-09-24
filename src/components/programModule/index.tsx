@@ -3,8 +3,14 @@ import { BrowserView, MobileView } from "react-device-detect";
 
 import Collapse from "../collapse";
 import Disciplines from "../disciplines";
+import { SpespecializedSubjects } from "../../interfaces/Program";
 
-const ProgramModule = ({ disciplines, numberModule }) => {
+interface Props {
+  disciplines: SpespecializedSubjects[];
+  numberModule: number;
+}
+
+const ProgramModule = ({ disciplines, numberModule }: Props) => {
   return (
     <>
       <BrowserView className={styles.module__content}>

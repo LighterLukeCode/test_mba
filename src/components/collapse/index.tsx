@@ -3,12 +3,17 @@ import plusIcon from "../../images/plusIcon.png";
 import minusIcon from "../../images/minusIcon.png";
 import { useRef, useState } from "react";
 import Disciplines from "../disciplines";
+import { SpespecializedSubjects } from "../../interfaces/Program";
 
-// : PropsWithChildren
-const Collapse = ({ disciplines, numberModule }) => {
+interface Props {
+  disciplines: SpespecializedSubjects[];
+  numberModule: number;
+}
+
+const Collapse = ({ disciplines, numberModule }: Props) => {
   const [openModule, setOpenModule] = useState(false);
 
-  const targetRef = useRef(null);
+  const targetRef = useRef<HTMLDivElement>(null);
   const [hider, setHider] = useState("0px");
 
   const toggleModuleList = () => {

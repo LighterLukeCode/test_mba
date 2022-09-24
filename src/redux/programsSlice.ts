@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import type { PayloadAction } from "@reduxjs/toolkit";
+import { Program } from "../interfaces/Program";
 
 export const fetchPrograms = createAsyncThunk("game/fetchProgramsStatus", async () => {
   const response = await fetch(`https://api-moscow-mba.herokuapp.com/products`);
@@ -7,7 +7,10 @@ export const fetchPrograms = createAsyncThunk("game/fetchProgramsStatus", async 
   return data;
 });
 
-const initialState = {
+interface ProgramState {
+  items: Program[];
+}
+const initialState: ProgramState = {
   items: [],
 };
 
