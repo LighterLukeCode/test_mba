@@ -12,8 +12,6 @@ const Home = () => {
     dispatch(fetchPrograms());
   }, []);
 
-  console.log(items);
-
   return (
     <>
       <h1 className="title">Специализированные дисциплины</h1>

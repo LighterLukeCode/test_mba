@@ -20,14 +20,12 @@
   .disciplines__list {
     font-size: 15px;
     line-height: 130%;
+    padding-left: 15px;
     .discipline {
       margin-bottom: 10px;
       &:last-child {
         margin-bottom: 35px;
       }
-    }
-    .discipline::before {
-      margin-left: 0em;
     }
   }
 }
