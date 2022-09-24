@@ -55,6 +55,7 @@
     font-weight: bold;
     display: inline-block;
     width: 1em;
+    margin-left: -1em;
   }
 }
 
@@ -80,7 +81,7 @@
     border-left: 26px solid #cd1800;
   }
   .exam__list {
-    padding-left: 23px;
+    padding-left: 44px;
     .exam__list_item:not(:last-child) {
       margin-bottom: 15px;
     }
