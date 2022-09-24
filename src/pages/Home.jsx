@@ -5,32 +5,22 @@ import { fetchPrograms } from "../redux/programsSlice";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 
 const Home = () => {
-  // const getData = async () => {
-  //   const response = await fetch(`https://api-moscow-mba.herokuapp.com/products`);
-  //   // .then(res => res.json())
-  //   // .then(data => console.log(data.filter(obj => obj.specializedSubjects.length === 10)));
-  //   const data = await response.json();
-  //   console.log(data);
-  // };
-  // getData();
   const { items } = useAppSelector(state => state.programsSlice);
   const dispatch = useAppDispatch();
 
-  const getData = () => {
-    dispatch(fetchPrograms());
-  };
-
   React.useEffect(() => {
-    getData();
+    dispatch(fetchPrograms());
   }, []);
-
-  console.log(items.filter(obj => obj.specializedSubjects.length === 10));
 
   return (
     <>
       <h1 className="title">Специализированные дисциплины</h1>
-      <Program />
-      <Program />
+      {items.length > 0 &&
+        items
+          .filter(obj => obj.specializedSubjects.length === 10)
+          .slice(0, 5)
+          .map(program => <Program key={program.id} program={program} />)}
+
       <Footer />
     </>
   );
